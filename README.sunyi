@@ -1,0 +1,18 @@
+post中需要嵌入<iframe>使用本地html是，需要做如下事情：
+1: 在_config.yml中添加skip_render，让hexo跳过嵌入的html渲染
+
+  skip_render:
+    - pre_html/*
+    - pre_html/**/*
+    - _posts/math-calc-1/**/*
+例如: 添加如下：
+    - _posts/post_1/**/*
+
+或者:
+    skip_render: [test.html, '*.html', test/**, test/*]
+
+2: 在source/pre_html文件夹中添加软连接，使用相对路径指向需要嵌入的html文件，这一步是为了home页，否则home页预览无法显示
+
+3: 添加iframe:
+
+<iframe width="80%" height="480px" scrolling="auto" frameborder="0" src="pre_html/math_calc_1.html"></iframe>

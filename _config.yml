@@ -26,6 +26,10 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+    - pre_html/*
+    - pre_html/**/*
+    - _posts/math-calc-1/**/*
+    - _posts/math-triangle/**/*
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -34,7 +38,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
