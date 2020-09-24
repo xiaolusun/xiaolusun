@@ -29,6 +29,7 @@ skip_render:
     - pre_html/*
     - pre_html/**/*
     - _posts/math-calc-1/**/*
+    - _posts/math-calc-2/**/*
     - _posts/math-triangle/**/*
 
 # Writing
