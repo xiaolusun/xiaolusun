@@ -31,6 +31,7 @@ skip_render:
     - _posts/math-calc-1/**/*
     - _posts/math-calc-2/**/*
     - _posts/math-triangle/**/*
+    - _posts/math-3-plus-minus/**/*
 
 # Writing
 new_post_name: :title.md # File name of new posts
